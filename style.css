@@ -1,0 +1,381 @@
+* {box-sizing: border-box;}
+* {text-decoration: none; }
+* {font-family: Verdana, Arial, sans-serif;}
+/* grid setup style */
+#layout_grid { 
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	grid-gap: 0px;
+	min-width: 850px;
+	background-color: #FFFFFF;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+#layout_main { 
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	width: 100%;
+	margin: auto;
+} 
+/* navigation top style*/
+#ul_nav {
+	display: block;
+	padding: 0px 0px;
+	margin: auto;
+}
+.li_nav {
+	display: inline-block;
+	padding: 10px 15px;
+	margin: 0px 5px;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+/* navigation footer style */
+#ul_ft_nav {
+	display: block;
+	padding: 0px;
+	margin: auto;
+}
+
+.li_ft_nav {
+	display: inline-block;
+	padding: 0px 5px;
+	margin: 0px 5px;
+	font-size: 1em;
+}
+
+/* layout grid for main section */
+.main_section {
+	display: grid;
+	grid-column: 2 / 4;
+	background-color: #FFFFFF;
+	padding: 0px 0px;
+}
+.main_full {
+	
+	grid-column: 1 / -1;
+	background-color: #000000;
+	padding: 10px 10px;
+    text-align: center;
+}
+.main_empty_left {
+	display: inline-grid;
+	grid-column: 1 / 2;
+	background-color: #F0FFFF;
+	padding: 0px;
+}
+
+.main_empty_right {
+	display: inline-grid;
+	grid-column: 4 / 5;
+	background-color: #F0FFFF; 
+	padding: 0px;
+}
+
+.main_center {
+	display: inline-grid;
+	grid-column: 2 / 4;
+	background-color: #F0FFFF; 
+	padding: 20px 20px;
+}
+
+.p_main {
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 1em;
+}
+
+img { 
+	max-width: 100%;
+	height: 300px; 
+}
+
+
+h1 {
+	display: inline-block;
+	border-radius: 	20px 20px 4px 20px;
+	background-color: #00FFCC;
+	text-shadow:2px 2px 4px #000000;
+	border: 3px solid #000000;
+	padding: 10px 30px;
+	margin: auto;
+	letter-spacing: 10px;
+}
+
+
+.h2tab {
+
+	border-radius: 	20px 10px 0px 0px;
+	background-color: #00FFCC;
+	padding: 10px 30px;
+	margin: 20px 0px 0px auto;
+	text-align: left;
+	letter-spacing: 5px;
+}
+
+.img_index {
+	display: block;
+	width: 400px;
+	height: auto;
+	margin: auto;
+	border-radius: 	20px 20px 20px 20px;
+	border: 2px none #000000;
+}
+
+
+/* Grid Container */
+.nav_location {
+    grid-column: 2 / 3;
+    margin-top: auto;
+    margin-right: auto;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 5px 20px 0px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img_section {
+	display: block;
+	grid-column: 1 / -1;
+	background-color: #c7c7c7;
+	border-style: solid;
+	border-width: 1px;
+	height: 300px;
+	text-align: center;
+	padding: 0px 0px;
+	overflow: hidden;
+}
+
+header {
+	display: block;
+	grid-column: 3 / 4;
+	color: #F0FFFF ;
+	text-align: right;
+	padding: 8px 0px;
+	margin: 0px;
+}
+
+nav {
+	display: block;
+	grid-column: 1 / -1;
+	grid-row: 2 / 3;
+	background-color: #000000;
+	text-align: center;
+}
+
+main {
+	display: block;
+	grid-column: 1 / -1;
+	grid-row: 4 / 5;
+	padding: 0px 0px;
+	margin: 0px;
+}
+#footer_nav {
+	display: block;
+	grid-column: 1 / -1;
+	grid-row: 5 / 6;
+	background-color: #000000;
+	text-align: center;
+	padding: 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+footer {
+	display: block;
+	grid-column: 1 / -1;
+	grid-row: 6 / 7;
+	background-color: #F0FFFF;
+	text-align: center;
+	padding: 10px 0px;
+	margin: 0px;
+	font-size: .75em;
+	font-style: italic;
+}
+/* Grid Container end */
+
+
+.navLink:link {
+  color: #F0FFFF;
+}
+
+.navLink:visited {
+  color: #F0FFFF;
+}
+
+.navLink:hover {
+  color: #7FFFD4;
+}
+
+.navLink:active {
+  color: #00FFCC ;
+}
+
+/*  Forms  */
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    width: 30%;
+    padding-right: 1em;
+}
+input, textarea {
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+form {
+    display: block;
+    padding: 1em;
+    background-color: aquamarine;
+    width: 100%;
+    border-radius: 10px;
+    border: 4px dotted rgba(0, 0, 0, 0.5);
+}
+
+
+p {
+    padding: 0px 0px 0px 0px;
+    margin: 10px 10px 10px 10px;
+    line-height: 1.5em;
+}
+
+
+.p_content {
+    padding: 20px 20px 20px 20px;
+    margin: 0px 0px 10px 0px;
+    line-height: 1.5em;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 4px dotted rgba(0, 0, 0, 0.5);
+    
+}
+
+/* -----------Table --------------*/
+table { 
+        margin: auto auto 3em auto;
+        border: 5px dotted #000066;
+        width: 100%; 
+		border-spacing: 0;
+}
+td { 
+        padding: 0.5em;
+        border-style: none;
+        font-size: 1.2em;
+}
+th { 
+        padding: 0.5em;
+        border-style: none;
+        font-size: 1.2em;
+        background-color: aquamarine
+}
+.dishName {
+    width: 200px;
+    color:darkred;
+    font-weight:bold;
+}
+caption { 
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 0.1em; 
+}
+tr:nth-of-type(even) {
+        background-color: rgb(255, 255, 255); 
+}
+
+.p_index {
+    color: azure;
+    text-align: center;
+    width: 850px;
+    padding: 20px 20px;
+    margin: auto;
+}
+
+.h2_index {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    color: azure;
+    font-size: 2em;
+
+
+}
+
+.img_showcase {
+    background-color: aqua;
+    width: 350px;
+    height: 250px;
+    margin: 0.5em;
+}
+
+h2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+hr {
+    width: 60%;
+    border-top: 2px solid white;
+}
+
+.img_float_Left {
+    float: left;
+    width: 350px;
+    height: auto;
+    margin-right: 20px; 
+    border: .2em solid black;
+}
+
+body {
+    margin: auto;
+}
+
+.container_img {
+    margin: auto;
+    width: 1100px;
+}
+
+.h1_nav_loc {
+    display: block;
+    border-radius: 0px;
+    background-color: white;
+    border: 0px;
+    color: black;
+    text-shadow:none;
+    letter-spacing: 40px;
+    padding: 0px 0px 0px 90px;
+    margin-bottom: -7px;
+    
+
+    
+}
+
+
+.div_hero {
+    background-image: url(img/restaurant.jpg);
+    
+}
+
+.p_content_bg {
+    display: flex;
+    background-image: url(img/gofish_inside.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px ;
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+    text-shadow:2px 4px 3px #000000;
+    color:aliceblue;
+    align-items: center;
+    justify-content: center;
+    outline: 10px dotted #00FFCC;
+    outline-offset: -4px;
+    
+}
